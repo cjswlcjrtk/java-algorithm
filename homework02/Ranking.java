@@ -44,11 +44,15 @@ public class Ranking {
 		for(int i = 0; i < total; i++) {
 			for(int j = 0; j <total -1; j++ ) {
 				if(record[j] > record[j+1] ) {
+//					System.out.println("record[j] = " + record[j]);
+//					System.out.println("record[j+1] = " + record[j+1]);
 					double temp = record[j];
+//					System.out.println("temp = " + temp);
 					record[j] = record[j+1];
 					record[j+1] = temp;
 					
 					String temp2 = player[j];
+//					System.out.println("temp2 = " + temp2);
 					player[j] = player[j+1];
 					player[j+1] = temp2;
 					

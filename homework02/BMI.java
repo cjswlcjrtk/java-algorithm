@@ -25,8 +25,7 @@ public class BMI {
 
 	public static void main(String[] args) {	
 		String name = "", eval = "";
-		int height = 0, weight = 0;
-		double bmi = 0;
+		double height = 0, weight = 0, bmi = 0;
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -34,10 +33,10 @@ public class BMI {
 		name = scanner.next();
 		
 		System.out.println("키를 입력해주세요");
-		height = scanner.nextInt();
+		height = scanner.nextDouble();
 		
 		System.out.println("몸무게를 입력해주세요");
-		weight = scanner.nextInt();
+		weight = scanner.nextDouble();
 		
 		bmi = weight / ((height*0.01) * (height*0.01));		
 		

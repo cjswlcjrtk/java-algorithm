@@ -26,55 +26,14 @@ To. 개발자님
  * 
  *
  */
-public class ScoreCalc {
+public class Test0001 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("점수계산기");
 		
-		int count = 0, number = 0;
-		int[] num = null;
 		
-		while(true) {
-			System.out.println("더하시려는 숫자를 입력하세요(종료는 -1)");
-			number = scan.nextInt();
-			
-			if(number == -1) {
-				break;
-			}
-			
-			int[] temp = new int[count];
-			for(int i = 0; i < count; i++) {
-				temp[i] = num[i];
-				System.out.println("temp[i] = " + temp[i]);
-			}
-			count++;
-			
-			num = new int[count];
-			for(int i = 0; i < count-1; i++) {
-				num[i]= temp[i];
-				System.out.println("temp[i] = " + num[i]);
-			}
-			num[count-1] = number;
-			System.out.println("number = " + number);
-			
-		}
-		
-		int sum = 0, avg = 0;
-		for(int i = 0; i < count; i++) {
-			sum += num[i];
-		}
-		
-		avg = sum / count;
-		System.out.print("현재까지의 누적값은 ");
-		for(int i = 0; i < count; i++) {
-			if(i == count-1) {
-				System.out.printf("%d = ", num[i]);
-			}else {
-				System.out.printf("%d + " , num[i]);
-			}
-		}
-		System.out.printf("%d 이고 평균은 %d입니다." ,sum , avg);
+
 	}
 
 }
