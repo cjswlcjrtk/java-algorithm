@@ -2,8 +2,9 @@ package homework02;
 
 import java.util.Scanner;
 
-/**
-To. 개발자님
+/*
+ * 
+ * To. 개발자님
 연도를 넣으면 윤년인지 아닌지를 판단하는 프로그램이 필요합니다.
 입력창에 2000 이라고 넣으면 2000년은 윤년입니다. 이렇게 출력하는 어플 말입니다.
 로직은 아래와 같다고 하니 참조하시구요. 부탁드립니다.
@@ -19,24 +20,26 @@ public class LeapYear {
 
 	public static void main(String[] args) {
 		int year = 0;
+		
+		System.out.println("년도를 입력해주세요.");
+		
 		Scanner scanner = new Scanner(System.in);
 		year = scanner.nextInt();
-		
-//		System.out.println("year : " + year);
+		String eval = "";
 		
 		if((year%4) == 0) {
 			if((year%100) == 0) {
 				if((year%400) == 0) {
-					System.out.println("윤년이다");					
+					eval = "윤년이다";					
 				}else {
-					System.out.println("평년이다");	
+					eval = "평년이다";	
 				}
 			}else {
-				System.out.println("윤년이다");
+				eval = "윤년이다";	
 			}
 			
 		}
-		System.out.println("year : " + year);
+		System.out.printf("%d년도는 %s ", year, eval);
 
 	}
 

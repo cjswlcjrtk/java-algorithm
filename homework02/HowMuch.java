@@ -1,6 +1,14 @@
 package homework02;
+
+import java.util.Scanner;
+
 /**
- 이제 여기에 프로그램을 설치하려고 합니다.
+ * 
+ * 
+ * To. 개발자님
+
+우리는 소매점포인데요 주문을 받는 키오스크 (아래 그림같은)를 설치했어요.
+이제 여기에 프로그램을 설치하려고 합니다.
 일단 화면에 보이는 문장은 아래와 같이 진행 되었으면 해요.
 저희가 시장에 있는 가게다 보니까 깎아주는 기능도 탑재되야 해요.
 아래 형광펜 칠한 부분은 콘솔에서는 입력값입니다.
@@ -20,11 +28,34 @@ package homework02;
 [참고] 깍아주는 공식
 int dc = total / 10;
 total = total - dc;
+ *
  */
 public class HowMuch {
 
 	public static void main(String[] args) {
-
+		Scanner scan = new Scanner(System.in);		
+				
+		int price, amount, total, dc = 0;
+		System.out.println("얼마에요?");
+		price = scan.nextInt();
+		
+		System.out.printf("%d원 입니다.\n", price);
+		System.out.println("몇개 드릴까요?\n");
+		
+		amount = scan.nextInt();
+		total = price * amount;
+		
+		System.out.printf("%d개 주세요.\n", amount);
+		
+		dc = total / 10;
+		
+		System.out.printf("총 금액은 %d원 입니다.\n", total);
+		
+		int total2 = total - dc;
+		
+		System.out.print("10%할인해서 결제하실 금액은 ");
+		System.out.printf("%d원 입니다.\n", total2);
+		
 	}
 
 }
