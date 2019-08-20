@@ -42,8 +42,7 @@ public class Join {
 		double height = 0, weight = 0;
 		boolean isAdult = true;
 		
-		System.out.println("==== 회원가입 ====");
-		
+		System.out.println("==== 회원가입 ====");		
 		System.out.print("아이디 : ");
 		id = scan.next();
 		System.out.print("비밀번호 : ");

@@ -20,7 +20,8 @@ public class Student {
 			eval = "정상";
 		}else {
 			eval = "저체중";
-		}
+		}	
+		
 		return String.format("%s님의 BMI수치는 %.1f으로 %s입니다. \n", name, bmi, eval);
 	}
 	public String daechul(String name, String address, int age, int money, String Credit) {
