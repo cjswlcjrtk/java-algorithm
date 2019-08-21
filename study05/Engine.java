@@ -3,8 +3,10 @@ package study05;
 import java.util.Scanner;
 
 public class Engine {
+	
 
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 		Member member = null;
 		Service service = new Service();
@@ -13,7 +15,7 @@ public class Engine {
 					+ "5.ReportCard 6.Tax");
 			switch(scanner.nextInt()) {
 			case 0: System.out.println("종료"); 
-			break;
+			return;
 			case 1: 
 				member = new Member();
 				System.out.println("==== 회원가입 ====");		

@@ -2,7 +2,7 @@ package study05;
 
 public class Member {
 	private String id, pw, name, birth, blood;
-	private int kor, eng, math, money;
+	private int money;
 	double height, weight;
 	public String getId() {
 		return this.id;
@@ -45,25 +45,7 @@ public class Member {
 	}
 	public void setWeight(double weight) {
 		this.weight = weight;
-	}
-	public int getKor() {
-		return this.kor;
-	}
-	public void setKor(int kor) {
-		this.kor = kor;
-	}
-	public int getEng() {
-		return this.eng;
-	}
-	public void setEng(int eng) {
-		this.eng = eng;
-	}
-	public int getMath() {
-		return this.math;
-	}
-	public void setMath(int math) {
-		this.math = math;
-	}
+	}	
 	public int getMoney() {
 		return this.money;
 	}
